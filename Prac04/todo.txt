@@ -1,0 +1,11 @@
+Todo:
+Walkthrough, intermediate, from-scratch
+
+1. total_income.py
+2. numbers.py
+3. usernames.py
+4. list_comprehensions.py
+5. quickpicks.py
+    - each number is unique in each row.
+    - num_list.sort() # to sort the numbers
+6. Online Test 2

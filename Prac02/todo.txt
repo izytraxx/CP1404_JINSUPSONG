@@ -1,0 +1,6 @@
+Today's task:
+
+- capitalist_conrad.py (Things to do 1, 2, 3 on page 4) from scratch
+- files.py
+- password_checker.py
+- copy all your codes to a single word file, then submit to Assessment -> Practical -> Practical 2
