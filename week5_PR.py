@@ -11,5 +11,16 @@ Pull Request
 Todo:
 1. state_names.py
 2. color-names.py
+3. string_dict.py
 """
-asdf
+length = 50
+word1 = "xx"
+word2 = 10
+
+print("{:{}}: {}".format(word1, length, word2))
+
+test = {"aaa": 3, "dddddddddddddddddddd": 10}
+longest_word = max(test, key=len)
+print(longest_word)
+longest_size = len(longest_word)
+print(longest_size)

@@ -1,0 +1,13 @@
+BoxLayout:
+    orientation: "vertical"
+    TextInput:
+        id: user_input
+        multiline: False
+        on_text_validate: app.checking()
+    Label:
+        id: label_display
+        text: "Info"
+    Button:
+        id: submit_button
+        text: "Click Me"
+        on_press: app.button_pressed()

@@ -32,4 +32,3 @@ def get_age(): #function definition
             print("Enter a numeric number.")
 
 get_age() #function calling
-get_age()
