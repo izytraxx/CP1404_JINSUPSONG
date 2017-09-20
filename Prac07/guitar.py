@@ -9,14 +9,13 @@ class Guitar:
         return age
 
     def is_vintage(self):
-        if age >= 50:
+        if 2017 - self.year >= 50:
             return True
-        return False
+        else:
+            return False
 
     def __str__(self):
-        return "{} ({}) : ${}".format(self.name, self.year, self.cost)
+        return "{} ({}) : ${:.2f}".format(self.name, self.year, self.cost)
 
-gibson = Guitar("Gibson L-5 CES", 1992, 16035.40)
-another = Guitar("Another Guitar", 2012, 12000)
-print(gibson)
-print(another)
+#print(gibson)
+#print(another)

@@ -12,16 +12,13 @@ class ProgrammingLanguage:
             return False
 
     def __str__(self):
-        return "{}, {} Typing, Reflection={}, First appeared in {}".format(self.name, self.typing, self.reflection, self.year)
+        return "{}, {} Typing, Reflection={}, First appeared in {}".format(self.name, self.typing, self.reflection,
+                                                                               self.year)
 
 
-ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
-visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
-python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
-
-language_list = ['ruby', 'visual_basic', 'python']
-for each in language_list:
-    print(each)
+#language_list = ['ruby', 'visual_basic', 'python']
+#for each in language_list:
+#    print(each)
 
 
 #ruby = ["Ruby", "Dynamic", True, 1995]
