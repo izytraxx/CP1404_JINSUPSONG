@@ -1,3 +1,1 @@
-Fender Stratocaster from 2014 year cost $765.40
-Gibson L-5 CES from 1922 year cost $16035.40
-Line 6 JTV-59 from 2010 year cost $1512.90
+counter = 1,counter = 2,counter = 3

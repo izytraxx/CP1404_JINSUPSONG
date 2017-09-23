@@ -1,0 +1,77 @@
+# create your Kivy layout in the kv language here
+BoxLayout:
+    orientation: "horizontal"
+    BoxLayout:
+        size_hint_x: None
+        width: 200
+        orientation: "vertical"
+        ToggleButton:
+            id: required_books_button
+            group: 'menu_buttons'
+            text: "List Required"
+            on_press: app.clear_all(), app.create_required_books_widgets(), app.required_button_check()
+            #on_release: app.default_button_check()
+        ToggleButton:
+            id: completed_books_button
+            group: 'menu_buttons'
+            text: "List Completed"
+            on_press: app.clear_all(), app.create_completed_books_widgets(), app.completed_button_check()
+            #on_release: app.default_button_check()
+        Label:
+            size_hint_y: None
+            height: 40
+            text: "Add New Book..."
+        Label:
+            size_hint_y: None
+            height: 40
+            text: "Title:"
+        TextInput:
+            id: title_input
+            size_hint_y: None
+            height: 40
+            multiline: False
+            write_tab: False
+        Label:
+            size_hint_y: None
+            height: 40
+            text: "Author:"
+        TextInput:
+            id: author_input
+            size_hint_y: None
+            height: 40
+            multiline: False
+            write_tab: False
+        Label:
+            size_hint_y: None
+            height: 40
+            text: "Pages:"
+        TextInput:
+            id: pages_input
+            size_hint_y: None
+            height: 40
+            multiline: False
+            write_tab: False
+        Button:
+            text: "Add Item"
+            on_press: app.add_book()
+        Button:
+            text: "Clear"
+            on_release: app.clear_text()
+
+
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            id: label_upper
+            size_hint_y: None
+            height: 40
+            text: "Reading List"
+        BoxLayout:
+            orientation: "vertical"
+            id: list_label
+            #text: "Nothing"
+        Label:
+            id: label_lower
+            size_hint_y: None
+            height: 40
+            text: "Click on the menu on the left"
